@@ -258,6 +258,7 @@ class sp(object):
         # 输入商品信息
         self.driver.find_element_by_xpath('//*[@id="root"]/section/section/section/main/div/div/div[2]/article[1]/h2/button').click()
         self.driver.find_element_by_css_selector("input[placeholder='请输入']").click()
+        self.driver.find_element_by_xpath().clear()
         # self.driver.execute_script('document.querySelector("input[placeholder=\'请输入\']").value="";')
         self.tools.send_key(self.tools.find_ele('css selector', "input[placeholder='请输入']"), '自动测试商品-1')
         self.driver.find_element_by_xpath('//div[3]//div[2]//div[1]//div[1]//div[1]//div[1]//span[2]').click()

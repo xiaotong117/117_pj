@@ -8,12 +8,7 @@ import time, os
 from datetime import datetime, date
 
 
-
-
-
-
 class db_operate():
-
     def db_connect(self, DB_CONFIG):
         try:
             conn = pymysql.connect(**DB_CONFIG)
@@ -33,13 +28,11 @@ class db_operate():
             cursor.execute(sql)
             result = cursor.fetchall()
             return result
-
         except:
             cursor.close()
             logging.error("DB连接错误", exc_info=True)
 
 class list_filter(object):
-
     def __init__(self, driver: webdriver.Chrome):
         self.driver = driver
 

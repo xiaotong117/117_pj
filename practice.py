@@ -1,8 +1,9 @@
-import traceback
+import requests
 
-try:
-    import lxml
-except Exception as e:
-    print(e)
-    trace = traceback.format_exc()
-    print(trace)
+print('真的可以了')
+
+
+
+# if __name__ == '__main__':
+#     print(sun_str('3456785555','12345678'))
+#     print(list('321'))

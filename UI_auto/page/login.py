@@ -15,19 +15,16 @@ class slnm(object):
         self.driver.maximize_window()
 
     def login(self, mobile, password):
-
         '''
         输入账号密码
         :param mobile: 账号
         :param password: 密码
         :return:
         '''
-
         self.tools.send_key(self.tools.find_ele('class name', 'ant-input'), mobile)
         self.tools.send_key(self.tools.find_ele(
             'xpath', '//*[@id="root"]/div/div[2]/div[1]/form/div[2]/div/div/div/input'), password)
         self.tools.find_ele('xpath', '//*[@id="root"]/div/div[2]/div[1]/form/button').click()
-
 
     def logot(self):
         wode = self.tools.find_ele('xpath', '//*[@id="root"]/section/header/div[2]/span[1]')
@@ -38,3 +35,6 @@ class slnm(object):
     def closeurl(self):
         self.driver.quit()
 
+
+if __name__ == '__main__':
+    pass
