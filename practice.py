@@ -1,3 +1,4 @@
+#-- coding:UTF-8 --
 import requests
 
 print('真的可以了')
