@@ -2,6 +2,7 @@
 import requests
 
 print('真的可以了')
+print('我可以了')
 
 
 
