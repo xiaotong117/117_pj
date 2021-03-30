@@ -21,7 +21,7 @@ class MysqlFunction:
         # 指定section，option读取值
         try:
             #取host
-            self.host = conf.get(DBSelection,'host')
+            self.host = conf.get(DBSelection, 'host')
             # 取端口
             self.port = conf.get(DBSelection, 'port')
             # 取数据库用户名
@@ -133,7 +133,3 @@ class MysqlFunction:
             logger.error('执行数据库查询操作失败：%s' % e)
             dbCursor.close()
             exit()
-
-
-a = [{'1':1},2,3,4]
-print(a[0]['1'])
